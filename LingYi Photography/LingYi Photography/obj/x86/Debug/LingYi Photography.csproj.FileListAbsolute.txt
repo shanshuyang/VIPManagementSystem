@@ -1,0 +1,10 @@
+D:\C#Project\LingYi Photography\LingYi Photography\bin\x86\Debug\LingYi Photography.exe.config
+D:\C#Project\LingYi Photography\LingYi Photography\bin\x86\Debug\LingYi Photography.exe
+D:\C#Project\LingYi Photography\LingYi Photography\bin\x86\Debug\LingYi Photography.pdb
+D:\C#Project\LingYi Photography\LingYi Photography\obj\x86\Debug\LingYi_Photography.Login.resources
+D:\C#Project\LingYi Photography\LingYi Photography\obj\x86\Debug\LingYi_Photography.Properties.Resources.resources
+D:\C#Project\LingYi Photography\LingYi Photography\obj\x86\Debug\LingYi_Photography.VIPManagement.resources
+D:\C#Project\LingYi Photography\LingYi Photography\obj\x86\Debug\LingYi Photography.csproj.GenerateResource.cache
+D:\C#Project\LingYi Photography\LingYi Photography\obj\x86\Debug\LingYi Photography.csproj.CoreCompileInputs.cache
+D:\C#Project\LingYi Photography\LingYi Photography\obj\x86\Debug\LingYi Photography.exe
+D:\C#Project\LingYi Photography\LingYi Photography\obj\x86\Debug\LingYi Photography.pdb
