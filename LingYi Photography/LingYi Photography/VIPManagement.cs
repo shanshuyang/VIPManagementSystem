@@ -25,6 +25,7 @@ namespace LingYi_Photography
         Total = 4,
         Draw = 5,
     }    
+
     /// <summary>
     /// 说明：VIPMangement类。
     /// </summary>
@@ -33,7 +34,11 @@ namespace LingYi_Photography
         /// <summary>
         /// 说明：Login对象，用于在该窗体激活时根据构造函数保存Login窗体。
         /// </summary>
-        private Login login;
+        private readonly Login login;
+        /// <summary>
+        /// 说明：Administrator对象，用于记录登录账户的信息。
+        /// </summary>
+        private readonly Administrator administrator;
         /// <summary>
         /// 说明：StreamWriter对象，用于VIPMangement窗体中数据的写入。
         /// </summary>
@@ -47,9 +52,10 @@ namespace LingYi_Photography
         /// 说明：VIPManagement类的构造函数。
         /// </summary>
         /// <param name="loginForm">Login窗体的对象，用于保存Login窗体的界面。</param>
-        public VIPManagement(Login loginForm)
+        public VIPManagement(Login loginForm, Administrator administrator)
         {
             login = loginForm;
+            this.administrator = administrator;
             InitializeComponent();
         }
         
@@ -120,7 +126,8 @@ namespace LingYi_Photography
         /// <param name="e"></param>
         private void Btn_administrator_Click(object sender, EventArgs e)
         {
-            //do something
+            AdministratorInformation administratorInformation = new AdministratorInformation(administrator);
+            administratorInformation.Show();
         }
 
         /// <summary>
@@ -322,7 +329,7 @@ namespace LingYi_Photography
             {
                 string dataCheck;
                 string dataCheckPhone;
-                sr = new StreamReader(Application.StartupPath + @"\VIPData\VIPInfo.txt");
+                sr = new StreamReader(Application.StartupPath + @"\Data\VIPInfo.txt");
                 dataCheck = sr.ReadLine();
                 while (dataCheck != null)
                 {
@@ -354,7 +361,7 @@ namespace LingYi_Photography
                 {
                     draw = 6;
                 }
-                sw = new StreamWriter(Application.StartupPath + @"\VIPData\VIPInfo.txt", true);
+                sw = new StreamWriter(Application.StartupPath + @"\Data\VIPInfo.txt", true);
                 VIPData = phone + "|" + name + "|" + sex + "|" + money + "|" + money + "|" + draw;
                 sw.WriteLine(VIPData);
                 sw.Close();
@@ -403,6 +410,7 @@ namespace LingYi_Photography
         {
             InitializeRechargeMoneyDeatilsPanelComponents();
         }
+        
         /// <summary>
         /// 说明：会员充值界面中，查询按钮Click事件。
         /// </summary>
@@ -474,7 +482,7 @@ namespace LingYi_Photography
                     ArrayList dataList = new ArrayList();
                     newBalance = rechargeMoney + Convert.ToDecimal(Lab_chargeMoneyBalance.Text);
                     newTotal = rechargeMoney + Convert.ToDecimal(Lab_chargeMoneyTotal.Text);
-                    sr = new StreamReader(Application.StartupPath + @"\VIPData\VIPInfo.txt");
+                    sr = new StreamReader(Application.StartupPath + @"\Data\VIPInfo.txt");
                     dataContent = sr.ReadLine();
                     for (int i = 0; dataContent != null; i++)
                     {
@@ -503,7 +511,7 @@ namespace LingYi_Photography
                         }
                     }
                     dataList[index] = newData;
-                    sw = new StreamWriter(Application.StartupPath + @"\VIPData\VIPInfo.txt", false);
+                    sw = new StreamWriter(Application.StartupPath + @"\Data\VIPInfo.txt", false);
                     for (int i = 0; i < dataList.Count; i++)
                     {
                         sw.WriteLine(dataList[i]);
@@ -605,7 +613,7 @@ namespace LingYi_Photography
                     int index = 0;
                     ArrayList dataList = new ArrayList();
                     newBalance = Convert.ToDecimal(Lab_spendMoneyBalance.Text) - spendMoney;
-                    sr = new StreamReader(Application.StartupPath + @"\VIPData\VIPInfo.txt");
+                    sr = new StreamReader(Application.StartupPath + @"\Data\VIPInfo.txt");
                     dataContent = sr.ReadLine();
                     for (int i = 0; dataContent != null; i++)
                     {
@@ -633,7 +641,7 @@ namespace LingYi_Photography
                         }
                     }
                     dataList[index] = newData;
-                    sw = new StreamWriter(Application.StartupPath + @"\VIPData\VIPInfo.txt", false);
+                    sw = new StreamWriter(Application.StartupPath + @"\Data\VIPInfo.txt", false);
                     for (int i = 0; i < dataList.Count; i++)
                     {
                         sw.WriteLine(dataList[i]);
@@ -759,7 +767,7 @@ namespace LingYi_Photography
             string[] dataSubContent;
             DataTable dataTable;
             dataTable = InitializeTable();
-            sr = new StreamReader(Application.StartupPath + @"\VIPData\VIPInfo.txt");
+            sr = new StreamReader(Application.StartupPath + @"\Data\VIPInfo.txt");
             dataContent = sr.ReadLine();
             //如果传入的参数是姓名，结果不唯一
             if (vIPData == VIPData.Name)
@@ -832,7 +840,7 @@ namespace LingYi_Photography
             string[] dataSubContent;
             DataTable dataTable;
             dataTable = InitializeTable();
-            sr = new StreamReader(Application.StartupPath + @"\VIPData\VIPInfo.txt");
+            sr = new StreamReader(Application.StartupPath + @"\Data\VIPInfo.txt");
             dataContent = sr.ReadLine();
             //如果传入第一个参数是姓名，第二个参数是手机号，结果唯一
             if (vIPData1 == VIPData.Name && vIPData2 == VIPData.Phone)
@@ -879,7 +887,7 @@ namespace LingYi_Photography
             //根据数据文本初始化表格
             dataTable = InitializeTable();
             //读取数据文本并存入DataTable对象
-            sr = new StreamReader(Application.StartupPath + @"\VIPData\VIPInfo.txt");
+            sr = new StreamReader(Application.StartupPath + @"\Data\VIPInfo.txt");
             dataContent = sr.ReadLine();
             while (dataContent != null)
             {
