@@ -9,14 +9,3 @@ D:\C#Project\LingYi Photography\LingYi Photography\obj\Debug\LingYi Photography.
 D:\C#Project\LingYi Photography\LingYi Photography\obj\Debug\LingYi Photography.exe
 D:\C#Project\LingYi Photography\LingYi Photography\obj\Debug\LingYi Photography.pdb
 D:\C#Project\LingYi Photography\LingYi Photography\obj\Debug\LingYi_Photography.VIPManagement.resources
-C:\Users\ASUS\Desktop\GitHub文件夹\VIPManagementSystem\LingYi Photography\LingYi Photography\bin\Debug\LingYi Photography.exe.config
-C:\Users\ASUS\Desktop\GitHub文件夹\VIPManagementSystem\LingYi Photography\LingYi Photography\bin\Debug\LingYi Photography.exe
-C:\Users\ASUS\Desktop\GitHub文件夹\VIPManagementSystem\LingYi Photography\LingYi Photography\bin\Debug\LingYi Photography.pdb
-C:\Users\ASUS\Desktop\GitHub文件夹\VIPManagementSystem\LingYi Photography\LingYi Photography\obj\Debug\LingYi Photography.csproj.AssemblyReference.cache
-C:\Users\ASUS\Desktop\GitHub文件夹\VIPManagementSystem\LingYi Photography\LingYi Photography\obj\Debug\LingYi_Photography.Login.resources
-C:\Users\ASUS\Desktop\GitHub文件夹\VIPManagementSystem\LingYi Photography\LingYi Photography\obj\Debug\LingYi_Photography.Properties.Resources.resources
-C:\Users\ASUS\Desktop\GitHub文件夹\VIPManagementSystem\LingYi Photography\LingYi Photography\obj\Debug\LingYi_Photography.VIPManagement.resources
-C:\Users\ASUS\Desktop\GitHub文件夹\VIPManagementSystem\LingYi Photography\LingYi Photography\obj\Debug\LingYi Photography.csproj.GenerateResource.cache
-C:\Users\ASUS\Desktop\GitHub文件夹\VIPManagementSystem\LingYi Photography\LingYi Photography\obj\Debug\LingYi Photography.csproj.CoreCompileInputs.cache
-C:\Users\ASUS\Desktop\GitHub文件夹\VIPManagementSystem\LingYi Photography\LingYi Photography\obj\Debug\LingYi Photography.exe
-C:\Users\ASUS\Desktop\GitHub文件夹\VIPManagementSystem\LingYi Photography\LingYi Photography\obj\Debug\LingYi Photography.pdb

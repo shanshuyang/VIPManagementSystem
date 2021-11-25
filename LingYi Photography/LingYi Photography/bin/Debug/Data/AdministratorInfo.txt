@@ -1,3 +1,0 @@
-admin|admin|2
-shanshuy|yss200031|2
-employee|employee|1

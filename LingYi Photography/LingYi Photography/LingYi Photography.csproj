@@ -66,13 +66,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administrator.cs" />
-    <Compile Include="AdministratorInformation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdministratorInformation.Designer.cs">
-      <DependentUpon>AdministratorInformation.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,9 +80,6 @@
     <Compile Include="VIPManagement.Designer.cs">
       <DependentUpon>VIPManagement.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdministratorInformation.resx">
-      <DependentUpon>AdministratorInformation.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>

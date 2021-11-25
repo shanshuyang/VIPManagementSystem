@@ -29,12 +29,10 @@ namespace LingYi_Photography
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Pl_header = new System.Windows.Forms.Panel();
-            this.Btn_setting = new System.Windows.Forms.Button();
-            this.Btn_logout = new System.Windows.Forms.Button();
-            this.Btn_administrator = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.Pl_navigation = new System.Windows.Forms.Panel();
             this.Btn_spendMoney = new System.Windows.Forms.Button();
@@ -94,16 +92,13 @@ namespace LingYi_Photography
             this.label20 = new System.Windows.Forms.Label();
             this.Lab_chargeMoneyName = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.Btn_rechargeMoneyQuerySubmit = new System.Windows.Forms.Button();
             this.Txt_rechargeMoneyQueryPhone = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.Pl_spendMoney = new System.Windows.Forms.Panel();
-            this.Pl_spendInformation = new System.Windows.Forms.Panel();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.Txt_spendMoneyQueryPhone = new System.Windows.Forms.TextBox();
+            this.Btn_rechargeMoneyQuerySubmit = new System.Windows.Forms.Button();
+            this.Btn_spendMoneyQuerySubmit = new System.Windows.Forms.Button();
             this.Pl_spendMoneyDetails = new System.Windows.Forms.Panel();
             this.Btn_spendMoneySpend = new System.Windows.Forms.Button();
             this.Nudown_spendMoneyNumber = new System.Windows.Forms.NumericUpDown();
@@ -118,10 +113,16 @@ namespace LingYi_Photography
             this.label39 = new System.Windows.Forms.Label();
             this.Lab_spendMoneyName = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.Btn_spendMoneyQuerySubmit = new System.Windows.Forms.Button();
-            this.Txt_spendMoneyQueryPhone = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.toolTip1 = new System.Windows.Forms.ToolTip();
+            this.Pl_spendInformation = new System.Windows.Forms.Panel();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.Btn_setting = new System.Windows.Forms.Button();
+            this.Btn_logout = new System.Windows.Forms.Button();
+            this.Btn_administrator = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.Pl_header.SuspendLayout();
             this.Pl_navigation.SuspendLayout();
             this.Pl_addVIP.SuspendLayout();
@@ -136,9 +137,9 @@ namespace LingYi_Photography
             this.Pl_rechargeMoneyDetails.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Nudown_rechargeMoneyNumber)).BeginInit();
             this.Pl_spendMoney.SuspendLayout();
-            this.Pl_spendInformation.SuspendLayout();
             this.Pl_spendMoneyDetails.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Nudown_spendMoneyNumber)).BeginInit();
+            this.Pl_spendInformation.SuspendLayout();
             this.SuspendLayout();
             // 
             // Pl_header
@@ -153,45 +154,6 @@ namespace LingYi_Photography
             this.Pl_header.Name = "Pl_header";
             this.Pl_header.Size = new System.Drawing.Size(1924, 60);
             this.Pl_header.TabIndex = 0;
-            // 
-            // Btn_setting
-            // 
-            this.Btn_setting.BackgroundImage = global::LingYi_Photography.Properties.Resources.设置图片;
-            this.Btn_setting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Btn_setting.Location = new System.Drawing.Point(1789, 5);
-            this.Btn_setting.Margin = new System.Windows.Forms.Padding(0);
-            this.Btn_setting.Name = "Btn_setting";
-            this.Btn_setting.Size = new System.Drawing.Size(50, 50);
-            this.Btn_setting.TabIndex = 3;
-            this.toolTip1.SetToolTip(this.Btn_setting, "系统设置");
-            this.Btn_setting.UseVisualStyleBackColor = true;
-            this.Btn_setting.Click += new System.EventHandler(this.Btn_setting_Click);
-            // 
-            // Btn_logout
-            // 
-            this.Btn_logout.BackgroundImage = global::LingYi_Photography.Properties.Resources.退出图片;
-            this.Btn_logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Btn_logout.Location = new System.Drawing.Point(1853, 5);
-            this.Btn_logout.Margin = new System.Windows.Forms.Padding(0);
-            this.Btn_logout.Name = "Btn_logout";
-            this.Btn_logout.Size = new System.Drawing.Size(50, 50);
-            this.Btn_logout.TabIndex = 2;
-            this.toolTip1.SetToolTip(this.Btn_logout, "登出账户");
-            this.Btn_logout.UseVisualStyleBackColor = true;
-            this.Btn_logout.Click += new System.EventHandler(this.Btn_logout_Click);
-            // 
-            // Btn_administrator
-            // 
-            this.Btn_administrator.BackgroundImage = global::LingYi_Photography.Properties.Resources.管理员图片;
-            this.Btn_administrator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Btn_administrator.Location = new System.Drawing.Point(1722, 5);
-            this.Btn_administrator.Margin = new System.Windows.Forms.Padding(0);
-            this.Btn_administrator.Name = "Btn_administrator";
-            this.Btn_administrator.Size = new System.Drawing.Size(50, 50);
-            this.Btn_administrator.TabIndex = 1;
-            this.toolTip1.SetToolTip(this.Btn_administrator, "管理员信息");
-            this.Btn_administrator.UseVisualStyleBackColor = true;
-            this.Btn_administrator.Click += new System.EventHandler(this.Btn_administrator_Click);
             // 
             // label2
             // 
@@ -522,14 +484,14 @@ namespace LingYi_Photography
             // 
             // Dgv_VIPInfo
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 14F);
-            this.Dgv_VIPInfo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("宋体", 14F);
+            this.Dgv_VIPInfo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.Dgv_VIPInfo.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dgv_VIPInfo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv_VIPInfo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.Dgv_VIPInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_VIPInfo.GridColor = System.Drawing.Color.Black;
             this.Dgv_VIPInfo.Location = new System.Drawing.Point(45, 117);
@@ -915,18 +877,6 @@ namespace LingYi_Photography
             this.label19.Text = "姓名:";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Btn_rechargeMoneyQuerySubmit
-            // 
-            this.Btn_rechargeMoneyQuerySubmit.Font = new System.Drawing.Font("宋体", 14F);
-            this.Btn_rechargeMoneyQuerySubmit.Location = new System.Drawing.Point(440, 25);
-            this.Btn_rechargeMoneyQuerySubmit.Margin = new System.Windows.Forms.Padding(0);
-            this.Btn_rechargeMoneyQuerySubmit.Name = "Btn_rechargeMoneyQuerySubmit";
-            this.Btn_rechargeMoneyQuerySubmit.Size = new System.Drawing.Size(150, 40);
-            this.Btn_rechargeMoneyQuerySubmit.TabIndex = 6;
-            this.Btn_rechargeMoneyQuerySubmit.Text = "查询";
-            this.Btn_rechargeMoneyQuerySubmit.UseVisualStyleBackColor = true;
-            this.Btn_rechargeMoneyQuerySubmit.Click += new System.EventHandler(this.Btn_rechargeMoneyQuerySubmit_Click);
-            // 
             // Txt_rechargeMoneyQueryPhone
             // 
             this.Txt_rechargeMoneyQueryPhone.Font = new System.Drawing.Font("宋体", 14F);
@@ -962,68 +912,51 @@ namespace LingYi_Photography
             this.Pl_spendMoney.Size = new System.Drawing.Size(1724, 670);
             this.Pl_spendMoney.TabIndex = 5;
             // 
-            // Pl_spendInformation
+            // label30
             // 
-            this.Pl_spendInformation.Controls.Add(this.label32);
-            this.Pl_spendInformation.Controls.Add(this.label34);
-            this.Pl_spendInformation.Controls.Add(this.label35);
-            this.Pl_spendInformation.Controls.Add(this.label38);
-            this.Pl_spendInformation.Controls.Add(this.label40);
-            this.Pl_spendInformation.Location = new System.Drawing.Point(35, 447);
-            this.Pl_spendInformation.Margin = new System.Windows.Forms.Padding(0);
-            this.Pl_spendInformation.Name = "Pl_spendInformation";
-            this.Pl_spendInformation.Size = new System.Drawing.Size(800, 200);
-            this.Pl_spendInformation.TabIndex = 17;
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("宋体", 18F);
+            this.label30.Location = new System.Drawing.Point(40, 30);
+            this.label30.Margin = new System.Windows.Forms.Padding(0);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(118, 30);
+            this.label30.TabIndex = 4;
+            this.label30.Text = "手机号:";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label32
+            // Txt_spendMoneyQueryPhone
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("宋体", 12F);
-            this.label32.Location = new System.Drawing.Point(5, 105);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(469, 20);
-            this.label32.TabIndex = 14;
-            this.label32.Text = "4.消费完成后会有信息提示，同时用户数据会更新。";
+            this.Txt_spendMoneyQueryPhone.Font = new System.Drawing.Font("宋体", 14F);
+            this.Txt_spendMoneyQueryPhone.Location = new System.Drawing.Point(160, 28);
+            this.Txt_spendMoneyQueryPhone.Margin = new System.Windows.Forms.Padding(0);
+            this.Txt_spendMoneyQueryPhone.Name = "Txt_spendMoneyQueryPhone";
+            this.Txt_spendMoneyQueryPhone.Size = new System.Drawing.Size(200, 34);
+            this.Txt_spendMoneyQueryPhone.TabIndex = 5;
+            this.Txt_spendMoneyQueryPhone.TextChanged += new System.EventHandler(this.Txt_spendMoneyQueryPhone_TextChanged);
             // 
-            // label34
+            // Btn_rechargeMoneyQuerySubmit
             // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("宋体", 12F);
-            this.label34.Location = new System.Drawing.Point(5, 5);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(69, 20);
-            this.label34.TabIndex = 10;
-            this.label34.Text = "注意：";
+            this.Btn_rechargeMoneyQuerySubmit.Font = new System.Drawing.Font("宋体", 14F);
+            this.Btn_rechargeMoneyQuerySubmit.Location = new System.Drawing.Point(440, 25);
+            this.Btn_rechargeMoneyQuerySubmit.Margin = new System.Windows.Forms.Padding(0);
+            this.Btn_rechargeMoneyQuerySubmit.Name = "Btn_rechargeMoneyQuerySubmit";
+            this.Btn_rechargeMoneyQuerySubmit.Size = new System.Drawing.Size(150, 40);
+            this.Btn_rechargeMoneyQuerySubmit.TabIndex = 6;
+            this.Btn_rechargeMoneyQuerySubmit.Text = "查询";
+            this.Btn_rechargeMoneyQuerySubmit.UseVisualStyleBackColor = true;
+            this.Btn_rechargeMoneyQuerySubmit.Click += new System.EventHandler(this.Btn_rechargeMoneyQuerySubmit_Click);
             // 
-            // label35
+            // Btn_spendMoneyQuerySubmit
             // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("宋体", 12F);
-            this.label35.Location = new System.Drawing.Point(5, 80);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(249, 20);
-            this.label35.TabIndex = 13;
-            this.label35.Text = "3.消费金额在0-余额之间；";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("宋体", 12F);
-            this.label38.Location = new System.Drawing.Point(5, 30);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(389, 20);
-            this.label38.TabIndex = 11;
-            this.label38.Text = "1.输入手机号唯一确定要消费的会员账号；";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("宋体", 12F);
-            this.label40.Location = new System.Drawing.Point(5, 55);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(349, 20);
-            this.label40.TabIndex = 12;
-            this.label40.Text = "2.消费前务必验证会员信息是否一致；";
+            this.Btn_spendMoneyQuerySubmit.Font = new System.Drawing.Font("宋体", 14F);
+            this.Btn_spendMoneyQuerySubmit.Location = new System.Drawing.Point(440, 25);
+            this.Btn_spendMoneyQuerySubmit.Margin = new System.Windows.Forms.Padding(0);
+            this.Btn_spendMoneyQuerySubmit.Name = "Btn_spendMoneyQuerySubmit";
+            this.Btn_spendMoneyQuerySubmit.Size = new System.Drawing.Size(150, 40);
+            this.Btn_spendMoneyQuerySubmit.TabIndex = 7;
+            this.Btn_spendMoneyQuerySubmit.Text = "查询";
+            this.Btn_spendMoneyQuerySubmit.UseVisualStyleBackColor = true;
+            this.Btn_spendMoneyQuerySubmit.Click += new System.EventHandler(this.Btn_spendMoneyQuerySubmit_Click);
             // 
             // Pl_spendMoneyDetails
             // 
@@ -1203,39 +1136,107 @@ namespace LingYi_Photography
             this.label41.Text = "姓名:";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Btn_spendMoneyQuerySubmit
+            // Pl_spendInformation
             // 
-            this.Btn_spendMoneyQuerySubmit.Font = new System.Drawing.Font("宋体", 14F);
-            this.Btn_spendMoneyQuerySubmit.Location = new System.Drawing.Point(440, 25);
-            this.Btn_spendMoneyQuerySubmit.Margin = new System.Windows.Forms.Padding(0);
-            this.Btn_spendMoneyQuerySubmit.Name = "Btn_spendMoneyQuerySubmit";
-            this.Btn_spendMoneyQuerySubmit.Size = new System.Drawing.Size(150, 40);
-            this.Btn_spendMoneyQuerySubmit.TabIndex = 7;
-            this.Btn_spendMoneyQuerySubmit.Text = "查询";
-            this.Btn_spendMoneyQuerySubmit.UseVisualStyleBackColor = true;
-            this.Btn_spendMoneyQuerySubmit.Click += new System.EventHandler(this.Btn_spendMoneyQuerySubmit_Click);
+            this.Pl_spendInformation.Controls.Add(this.label32);
+            this.Pl_spendInformation.Controls.Add(this.label34);
+            this.Pl_spendInformation.Controls.Add(this.label35);
+            this.Pl_spendInformation.Controls.Add(this.label38);
+            this.Pl_spendInformation.Controls.Add(this.label40);
+            this.Pl_spendInformation.Location = new System.Drawing.Point(35, 447);
+            this.Pl_spendInformation.Margin = new System.Windows.Forms.Padding(0);
+            this.Pl_spendInformation.Name = "Pl_spendInformation";
+            this.Pl_spendInformation.Size = new System.Drawing.Size(800, 200);
+            this.Pl_spendInformation.TabIndex = 17;
             // 
-            // Txt_spendMoneyQueryPhone
+            // label32
             // 
-            this.Txt_spendMoneyQueryPhone.Font = new System.Drawing.Font("宋体", 14F);
-            this.Txt_spendMoneyQueryPhone.Location = new System.Drawing.Point(160, 28);
-            this.Txt_spendMoneyQueryPhone.Margin = new System.Windows.Forms.Padding(0);
-            this.Txt_spendMoneyQueryPhone.Name = "Txt_spendMoneyQueryPhone";
-            this.Txt_spendMoneyQueryPhone.Size = new System.Drawing.Size(200, 34);
-            this.Txt_spendMoneyQueryPhone.TabIndex = 5;
-            this.Txt_spendMoneyQueryPhone.TextChanged += new System.EventHandler(this.Txt_spendMoneyQueryPhone_TextChanged);
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("宋体", 12F);
+            this.label32.Location = new System.Drawing.Point(5, 105);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(469, 20);
+            this.label32.TabIndex = 14;
+            this.label32.Text = "4.消费完成后会有信息提示，同时用户数据会更新。";
             // 
-            // label30
+            // label34
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("宋体", 18F);
-            this.label30.Location = new System.Drawing.Point(40, 30);
-            this.label30.Margin = new System.Windows.Forms.Padding(0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(118, 30);
-            this.label30.TabIndex = 4;
-            this.label30.Text = "手机号:";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("宋体", 12F);
+            this.label34.Location = new System.Drawing.Point(5, 5);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(69, 20);
+            this.label34.TabIndex = 10;
+            this.label34.Text = "注意：";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("宋体", 12F);
+            this.label35.Location = new System.Drawing.Point(5, 80);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(249, 20);
+            this.label35.TabIndex = 13;
+            this.label35.Text = "3.消费金额在0-余额之间；";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("宋体", 12F);
+            this.label38.Location = new System.Drawing.Point(5, 30);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(389, 20);
+            this.label38.TabIndex = 11;
+            this.label38.Text = "1.输入手机号唯一确定要消费的会员账号；";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("宋体", 12F);
+            this.label40.Location = new System.Drawing.Point(5, 55);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(349, 20);
+            this.label40.TabIndex = 12;
+            this.label40.Text = "2.消费前务必验证会员信息是否一致；";
+            // 
+            // Btn_setting
+            // 
+            this.Btn_setting.BackgroundImage = global::LingYi_Photography.Properties.Resources.设置图片;
+            this.Btn_setting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Btn_setting.Location = new System.Drawing.Point(1789, 5);
+            this.Btn_setting.Margin = new System.Windows.Forms.Padding(0);
+            this.Btn_setting.Name = "Btn_setting";
+            this.Btn_setting.Size = new System.Drawing.Size(50, 50);
+            this.Btn_setting.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.Btn_setting, "系统设置");
+            this.Btn_setting.UseVisualStyleBackColor = true;
+            this.Btn_setting.Click += new System.EventHandler(this.Btn_setting_Click);
+            // 
+            // Btn_logout
+            // 
+            this.Btn_logout.BackgroundImage = global::LingYi_Photography.Properties.Resources.退出图片;
+            this.Btn_logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Btn_logout.Location = new System.Drawing.Point(1853, 5);
+            this.Btn_logout.Margin = new System.Windows.Forms.Padding(0);
+            this.Btn_logout.Name = "Btn_logout";
+            this.Btn_logout.Size = new System.Drawing.Size(50, 50);
+            this.Btn_logout.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.Btn_logout, "登出账户");
+            this.Btn_logout.UseVisualStyleBackColor = true;
+            this.Btn_logout.Click += new System.EventHandler(this.Btn_logout_Click);
+            // 
+            // Btn_administrator
+            // 
+            this.Btn_administrator.BackgroundImage = global::LingYi_Photography.Properties.Resources.管理员图片;
+            this.Btn_administrator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Btn_administrator.Location = new System.Drawing.Point(1722, 5);
+            this.Btn_administrator.Margin = new System.Windows.Forms.Padding(0);
+            this.Btn_administrator.Name = "Btn_administrator";
+            this.Btn_administrator.Size = new System.Drawing.Size(50, 50);
+            this.Btn_administrator.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.Btn_administrator, "管理员信息");
+            this.Btn_administrator.UseVisualStyleBackColor = true;
+            this.Btn_administrator.Click += new System.EventHandler(this.Btn_administrator_Click);
             // 
             // VIPManagement
             // 
@@ -1249,7 +1250,7 @@ namespace LingYi_Photography
             this.Controls.Add(this.Pl_queryVIP);
             this.Controls.Add(this.Pl_addVIP);
             this.Name = "VIPManagement";
-            this.Text = "VIP管理系统";
+            this.Text = "VIPManagement";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.VIPManagement_FormClosing);
             this.Load += new System.EventHandler(this.VIPManagement_Load);
@@ -1277,11 +1278,11 @@ namespace LingYi_Photography
             ((System.ComponentModel.ISupportInitialize)(this.Nudown_rechargeMoneyNumber)).EndInit();
             this.Pl_spendMoney.ResumeLayout(false);
             this.Pl_spendMoney.PerformLayout();
-            this.Pl_spendInformation.ResumeLayout(false);
-            this.Pl_spendInformation.PerformLayout();
             this.Pl_spendMoneyDetails.ResumeLayout(false);
             this.Pl_spendMoneyDetails.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Nudown_spendMoneyNumber)).EndInit();
+            this.Pl_spendInformation.ResumeLayout(false);
+            this.Pl_spendInformation.PerformLayout();
             this.ResumeLayout(false);
 
         }
