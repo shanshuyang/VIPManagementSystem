@@ -1,7 +1,7 @@
 ﻿
 namespace LingYi_Photography
 {
-    partial class Login
+    partial class FormLogin
     {
         /// <summary>
         /// 必需的设计器变量。

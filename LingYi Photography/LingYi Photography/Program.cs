@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Model.Admin;
 
 namespace LingYi_Photography
 {
@@ -16,8 +17,8 @@ namespace LingYi_Photography
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
-            //Application.Run(new VIPManagement(new Login()));
+            //Application.Run(new FormLogin());
+            Application.Run(new FormVIPManagement(new FormLogin(), new SeniorAdministrator("shanshuy")));
         }
     }
 }

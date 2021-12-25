@@ -1,7 +1,7 @@
 ﻿
 namespace LingYi_Photography
 {
-    partial class VIPManagement
+    partial class FormVIPManagement
     {
         /// <summary>
         /// Required designer variable.

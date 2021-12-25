@@ -1,3 +1,4 @@
-admin|admin|2
-shanshuy|yss200031|2
-employee|employee|1
+admin|admin|2|true|true|true|true|true
+shanshuy|yss200031|2|true|true|true|true|true
+employee|employee|1|false|true|true|true|true
+intern|intern|0|false|false|true|false|false

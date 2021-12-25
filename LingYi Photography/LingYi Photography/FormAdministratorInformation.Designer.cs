@@ -1,7 +1,7 @@
 ﻿
 namespace LingYi_Photography
 {
-    partial class AdministratorInformation
+    partial class FormAdministratorInformation
     {
         /// <summary>
         /// Required designer variable.

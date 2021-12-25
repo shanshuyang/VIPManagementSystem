@@ -1,0 +1,11 @@
+C:\Users\ASUS\Desktop\LingYi Photography\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\ASUS\Desktop\LingYi Photography\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\ASUS\Desktop\LingYi Photography\DataAccessLayer\bin\Debug\DBUtil.dll
+C:\Users\ASUS\Desktop\LingYi Photography\DataAccessLayer\bin\Debug\Model.dll
+C:\Users\ASUS\Desktop\LingYi Photography\DataAccessLayer\bin\Debug\DBUtil.pdb
+C:\Users\ASUS\Desktop\LingYi Photography\DataAccessLayer\bin\Debug\Model.pdb
+C:\Users\ASUS\Desktop\LingYi Photography\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\LingYi Photography\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\LingYi Photography\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\ASUS\Desktop\LingYi Photography\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\ASUS\Desktop\LingYi Photography\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

@@ -1,0 +1,6 @@
+C:\Users\ASUS\Desktop\LingYi Photography\DBUtil\bin\Debug\DBUtil.dll
+C:\Users\ASUS\Desktop\LingYi Photography\DBUtil\bin\Debug\DBUtil.pdb
+C:\Users\ASUS\Desktop\LingYi Photography\DBUtil\obj\Debug\DBUtil.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\LingYi Photography\DBUtil\obj\Debug\DBUtil.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\LingYi Photography\DBUtil\obj\Debug\DBUtil.dll
+C:\Users\ASUS\Desktop\LingYi Photography\DBUtil\obj\Debug\DBUtil.pdb
